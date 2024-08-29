@@ -1,0 +1,220 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+.nav {
+    width: 10vw;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.57);
+    
+    background-color: #9DAD6F;
+    height: 100vh;
+    
+    @media screen and (max-width:1100px) {
+        width: 15vw;
+    }
+}
+
+.nav ul {
+    height: 100vh;
+    position: fixed;
+    width: 10vw;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #9DAD6F;
+    @media screen and (max-width:1100px) {
+        width: 15vw;
+    }
+}
+.nav ul li  {
+   list-style: none;
+   height: 20px;
+
+   & a {
+       color: white;
+       text-decoration: none;
+
+   }
+}
+
+#mess {
+    height: 97vh;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    width: 90vw;
+    
+    
+
+}
+.message {
+    background-color: #9DAD6F ;
+    padding: 5px 10px; 
+    margin: 5px 0;
+    max-width: 60vw;
+    word-wrap: break-word;
+    border-radius: 10px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.own-message {
+    background-color: #C3DFE0;
+    align-self: flex-end;
+    text-align: right;
+    color: black;
+}
+
+
+.inputs {
+    display: flex;
+    align-items: end;
+    background-color: brown;
+    height: 3vh;
+    position: fixed;
+    margin: auto;
+    z-index: 1;
+    
+    
+    
+    & button {
+        width:10vw;
+        height: 40px;
+        background-color: #333;
+        border: none;
+        border-left: 1px solid black;
+        color: white;
+
+        
+    }
+    @media screen and (max-width: 1100px) {
+        button{
+            width: 15vw;
+    
+        }
+
+
+    }
+}
+
+::placeholder {
+    color: white;
+}
+
+input {
+    width: 80vw;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    padding-left: 20px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+
+    
+    
+    
+}
+
+@media screen and (max-width: 1100px) {
+    input {
+        width: 70vw;
+
+    }
+
+    #mess {
+        width: 85vw;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .container {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .nav {
+        display: flex;
+       height: 80px;
+       width: 100vw;
+       position: fixed;
+       top: 0;
+       right: 0;
+       left: 0;
+       z-index: 1000;
+       
+       & ul {
+        background: none;
+       }
+       
+       
+      
+    }
+    .content{
+        margin-top: 10vh;
+        flex: 1;
+        
+    }
+
+    .nav ul {
+        display: flex;
+    }
+    
+    .nav ul li {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 744px) {
+   
+    .inputs{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100vh;
+        height: 7vh;
+       
+        & input {
+            width: 80vw;
+            height: 7vh;
+        }
+        & button {
+            width: 20vw;
+            height: 7vh;
+        }
+    }
+    #mess {
+        height: calc(100vh - 17vh);
+        display: flex;
+        width: 100vw;
+    }
+}
+
+
+
+/* home  */
+
+div.home  {
+    display: flex;
+    background-color: #9DAD6F;
+    height: 100vh;
+
+    & button {
+        background-color: #333;
+        height: 40px;
+        border: none;
+        border-left: 1px solid black;
+        margin: 0;
+        width: 30vw;
+        color: white;
+        font-size: 20px;
+
+    }
+}
