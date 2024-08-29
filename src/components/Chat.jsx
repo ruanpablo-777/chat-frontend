@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import { BrowserRouter as Router, Route , Routes, Link,useNavigate} from "react-router-dom"
 import Home from "./Home.jsx"
 import "../App.css"
-const socket = io('https://chat-backend-gules-five.vercel.app/', {
+const socket = io('https://chat-backend-3skmk2hsx-ruan-pablos-projects-07ed08b5.vercel.app', {
     transports: ['websocket']
   });
    // Substitua pela URL do seu servidor
