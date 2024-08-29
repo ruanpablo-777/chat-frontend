@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import { BrowserRouter as Router, Route , Routes, Link,useNavigate} from "react-router-dom"
 import Home from "./Home.jsx"
-import "../App.css/"
+import "../App.css"
 const socket = io('https://chat-backend-gules-five.vercel.app/', {
     transports: ['websocket']
   });
